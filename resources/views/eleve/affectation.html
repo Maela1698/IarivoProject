@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Affectation</title>
+        <!-- Google Font: Source Sans Pro -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="../../plugins/fontawesome-free/css/all.min.css"
+        />
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
+
+        <!-- Style perso -->
+        <link rel="stylesheet" href="../../plugins/cssPerso/affectation.css" />
+    </head>
+    <body class="hold-transition sidebar-mini">
+        <!-- warpper -->
+        <div class="wrapper">
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                  </li>
+                </ul>
+            
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+                  <!-- Navbar Search -->
+                  <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                      <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                          <div class="input-group-append">
+                            <button class="btn btn-navbar" type="submit">
+                              <i class="fas fa-search"></i>
+                            </button>
+                            <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                              <i class="fas fa-times"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="../../index3.html" class="brand-link">
+                  <span class="brand-text font-weight-light">Iarivo</span>
+                </a>
+            
+                <!-- Sidebar -->
+                <div class="sidebar">
+                  <!-- Sidebar Menu -->
+                  <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                      <!-- Add icons to the links using the .nav-icon class
+                           with font-awesome or any other icon font library -->
+                      <li class="nav-header">GESTION</li>
+                      <li class="nav-item">
+                        <a href="../disponibilite/disponibilite.html" class="nav-link">
+                          <i class="nav-icon fas fa-th"></i>
+                          <p>
+                            Disponibilite
+                          </p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="nav-icon fas fa-table"></i>
+                          <p>
+                            Cours
+                            <i class="fas fa-angle-left right"></i>
+                          </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                          <li class="nav-item">
+                            <a href="../cours/affectation.html" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Affectation</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-header">ADMINISTRATION</li>
+                      <li class="nav-item menu-open">
+                        <a href="#" class="nav-link active">
+                          <i class="nav-icon fas fa-columns"></i>
+                          <p>
+                            Eleve
+                            <i class="fas fa-angle-left right"></i>
+                          </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                          <li class="nav-item">
+                              <a href="../eleve/ajout.html" class="nav-link active">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ajout</p>
+                              </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="nav-icon fas fa-address-card"></i>
+                          <p>
+                            Enseignant
+                            <i class="fas fa-angle-left right"></i>
+                          </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                          <li class="nav-item">
+                            <a href="../enseignant/ajout.html" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Ajout</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                  <div class="container-fluid">
+                    <div class="row mb-2">
+                      <div class="col-sm-6">
+                        <h1>Affectation cours</h1>
+                      </div>
+                      <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                          <li class="breadcrumb-item">
+                            <a href="../disponibilite/disponibilite.html"><small>Acceuil</small></a>
+                          </li>
+                          <li class="breadcrumb-item active">
+                            <small>Affectation</small>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.container-fluid -->
+                </section>
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <button type="button" class="btn btn-primary" data-card-widget="collapse">Nouvel Eleve</button>
+                                    </div>
+                                    <!-- /.card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-4 mx-auto">
+                                                <div class="card-body clearfix">
+                                                    <blockquote class="quote-secondary">
+                                                        <p>Discipline : Piano</p>
+                                                        <p>Jour : Mercredi</p>
+                                                        <p>Horraire disponible : 11h - 13h30</p>
+                                                        <p>Enseigant : Mr Jean</p>
+                                                        <p>Annexe : Antaninarenina</p>
+                                                    </blockquote>
+                                                </div>
+                                                <!-- /.card-body -->
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-md-6">
+                                                <div class="card card-primary">
+                                                    <!-- form start -->
+                                                    <form>
+                                                      <div class="card-body">
+                                                        <div class="form-group">
+                                                          <label for="exampleInputEmail1">Eleve</label>
+                                                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="exampleInputPassword1">Heure debut</label>
+                                                          <input type="time" class="form-control" id="exampleInputPassword1" placeholder="">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Duree</label>
+                                                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Mode de payement</label>
+                                                            <select class="form-control">
+                                                              <option>Trimestriel</option>
+                                                              <option>Mensuel</option>
+                                                              <option>Semestriel</option>
+                                                              <option>Annee</option>
+                                                            </select>
+                                                        </div>
+                                                      </div>
+                                                      <!-- /.card-body -->
+                                                    </form>
+                                                  </div>
+                                                  <!-- /.card -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.row -->
+                                    </div>
+                                    <!-- /.card-body -->
+                                    <div class="card-footer btn-ok-cancel">
+                                        <div class="btn-ok-cancel">
+                                            <button type="submit" class="btn btn-secondary">Annuler</button>
+                                            <button type="submit" class="btn btn-primary">Confirmer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div class="float-right d-none d-sm-block">
+                  <b>Version</b> 1.0
+                </div>
+                <strong>Copyright &copy; 2024 <a href="#">Iarivo Art & Music Academy</a>.</strong>
+            </footer>
+
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
+        <!-- ./wrapper -->
+        <!-- jQuery -->
+        <script src="../../plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../../dist/js/demo.js"></script>
+    </body>
+</html>
